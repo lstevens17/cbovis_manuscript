@@ -61,4 +61,4 @@ Where the columns are:
 6. intron span 
 7. geneID
 
-We can then use the output files in combination with a orthology clustering file to compare the gene structure in orthologous gene pairs. 
+We can then use the output files in combination with a orthology clustering file (or a recipricol best BLAST hit file) to compare the gene structure in orthologous gene pairs. 
