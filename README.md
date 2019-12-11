@@ -1,5 +1,7 @@
 # Scripts and files associated with the _C. bovis_ manuscript
 
+---
+
 ### Recipricol best BLAST hits 
 To define single-copy orthologues between _C. bovis_ and _C. elegans_, we used a recipricol best BLAST hit approach. We first filtered the protein FASTAs so that only the longest isoform of each gene was present. We then used BLASTP to search each proteome against the other like so:
 
@@ -22,6 +24,8 @@ Where:
 
 The output of this script is a TSV file showing the transcript IDs and BLAST results.
 
+---
+
 ### Calculating repeat density across a chromosome
 We used the approach of [Berriman _et al._ (2018)](https://protocolexchange.researchsquare.com/article/nprot-6761/v1) to create repeat libraries for _C. bovis_ and _C. elegans_. These repeat library was then provided to [RepeatMasker](http://www.repeatmasker.org/) which generated a FASTA file with repeats masked with Ns. We then used `repeat_density.py` to calculate repeat density across each chromosome or contig like so: 
 
@@ -34,6 +38,8 @@ Where:
 `CELEG.caenorhabditis_elegans_N2_PRJNA13758_WBPS12.scaffolds.fna.masked` = masked genome FASTA
 
 `50000` = bin size
+
+---
 
 ### Comparing gene structure between _C. bovis_ and _C. elegans_
 We first need to extract stats for every transcript in each species using the GFF3 files. As part of the CGP, we have a standardised GFF3 format which makes life slightly easier. We calculated stats using `gene_structure_stats.py` like so: 
