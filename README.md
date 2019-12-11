@@ -7,4 +7,8 @@ We used the approach of [Berriman _et al._ (2018)](https://protocolexchange.rese
 ./repeat_density.py CELEG.caenorhabditis_elegans_N2_PRJNA13758_WBPS12.scaffolds.fna.masked 50000
 ```
 
-Where `CELEG.caenorhabditis_elegans_N2_PRJNA13758_WBPS12.scaffolds.fna.masked` is the masked genome FASTA and `50000` is the bin size
+Where:
+
+`CELEG.caenorhabditis_elegans_N2_PRJNA13758_WBPS12.scaffolds.fna.masked` = masked genome FASTA
+
+`50000` = bin size
