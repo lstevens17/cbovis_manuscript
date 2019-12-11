@@ -17,6 +17,7 @@ We then provided these output files to a script written by Dom Laetsch (and avai
 Where:
 
 `1e-25` = minimum evalue for a hit to be considered
+
 `75` = min query coverage for a hit to be considered
 
 The output of this script is a TSV file showing the transcript IDs and BLAST results.
